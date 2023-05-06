@@ -6,6 +6,7 @@
 </head>
 <body>
 
+{% if object_list%}
 <table border="1">
     <tr>
         <th>Id</th>
@@ -22,7 +23,8 @@
     </tr>
 {% endfor %}
 </table>
-
-
+{% else %}
+there is no data
+{% endif %}
 </body>
 </html>
